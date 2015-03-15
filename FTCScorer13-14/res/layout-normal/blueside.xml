@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <ImageView
+        android:id="@+id/bluebalance"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bluebalance"
+         />
+
+    <ImageView
+        android:id="@+id/bluestruct"
+        android:layout_width="100dip"
+        android:layout_height="150dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bluestruct"
+         />
+    
+    <ImageView
+        android:id="@+id/blueinvisibleBalance"
+        android:layout_width="400dip"
+        android:layout_height="1dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/blankbalance" />
+
+    <ImageButton
+        android:id="@+id/bluecrateIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blueinvisibleBalance"
+        android:layout_toRightOf="@+id/bluestruct"
+        android:background="@null"
+        android:src="@drawable/bigcrate" />
+
+    <ImageButton
+        android:id="@+id/bluecrateOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bluebalance"
+        android:layout_alignTop="@+id/bluecrateIR"
+        android:background="@null"
+        android:src="@drawable/bigcrate" />
+
+    <ImageButton
+        android:id="@+id/bluecrateIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bluecrateIR"
+        android:layout_toLeftOf="@+id/bluestruct"
+        android:background="@null"
+        android:src="@drawable/bigcrate" />
+
+    <ImageButton
+        android:id="@+id/bluecrateOL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blueinvisibleBalance"
+        android:layout_alignLeft="@+id/bluebalance"
+        android:background="@null"
+        android:onClick="addToCrateOL"
+        android:src="@drawable/bigcrate" />
+
+    <TextView
+        android:id="@+id/bluecrateORnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bluebalance"
+        android:layout_below="@+id/bluebalance"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/bluecrateIRnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bluecrateIR"
+        android:layout_below="@+id/bluebalance"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/bluecrateOLnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bluecrateIRnum"
+        android:layout_alignBottom="@+id/bluecrateIRnum"
+        android:layout_alignLeft="@+id/bluebalance"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/bluecrateILnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bluecrateOLnum"
+        android:layout_alignBottom="@+id/bluecrateOLnum"
+        android:layout_alignRight="@+id/bluecrateIL"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/blueclear"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="CLEAR"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bluescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/blueTextLabel"
+        android:layout_alignBottom="@+id/blueTextLabel"
+        android:layout_toRightOf="@+id/blueTextLabel"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/blueTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/blueclear"
+        android:layout_alignRight="@+id/bluestruct"
+        android:layout_marginRight="40dip"
+        android:text="Blue Score"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/blueFloornum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/blueFloor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="0" />
+
+    <ImageButton
+        android:id="@+id/blueFloor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/bluefloor" />
+
+</RelativeLayout>

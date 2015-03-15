@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ramp_choices">
+        <item>None</item>
+        <item>Partial</item>
+        <item>Full</item>
+    </string-array>
+</resources>

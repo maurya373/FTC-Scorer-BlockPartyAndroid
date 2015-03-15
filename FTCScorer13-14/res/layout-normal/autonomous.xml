@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/blueRampSpinner"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/blueBlockSpinner"
+        android:layout_alignTop="@+id/rampLabel"
+        android:layout_marginRight="20dip" />
+
+    <Spinner
+        android:id="@+id/blueBlockSpinner"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/blockLabel"
+        android:layout_marginRight="20dip" />
+
+    <Spinner
+        android:id="@+id/redBlockSpinner"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/blockLabel"
+        android:layout_marginLeft="30dip" />
+
+    <Spinner
+        android:id="@+id/redRampSpinner"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignBottom="@+id/rampLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dip" />
+
+    <TextView
+        android:id="@+id/blockLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Block"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <Spinner
+        android:id="@+id/redBlockSpinner2"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/redBlockSpinner"
+        android:layout_below="@+id/redBlockSpinner" />
+
+    <Spinner
+        android:id="@+id/blueBlockSpinner2"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/blueBlockSpinner"
+        android:layout_alignTop="@+id/redBlockSpinner2" />
+
+    <Spinner
+        android:id="@+id/redRampSpinner2"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/redRampSpinner"
+        android:layout_below="@+id/blueRampSpinner" />
+
+    <Spinner
+        android:id="@+id/blueRampSpinner2"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/blueRampSpinner"
+        android:layout_alignTop="@+id/redRampSpinner2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/rampLabel"
+        android:text="Red"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/blockLabel"
+        android:text="Blue"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/rampLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redBlockSpinner2"
+        android:layout_centerHorizontal="true"
+        android:text="Ramp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+</RelativeLayout>

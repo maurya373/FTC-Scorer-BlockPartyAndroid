@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="block_choices">
+        <item>None</item>
+        <item>Floor</item>
+        <item>Crate</item>
+        <item>IR</item>
+    </string-array>
+</resources>

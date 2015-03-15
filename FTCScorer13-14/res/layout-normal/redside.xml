@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relRed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/redbalance"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/redbalance"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/redstruct"
+        android:layout_width="100dip"
+        android:layout_height="150dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/redstruct"
+        tools:ignore="ContentDescription" />
+    
+    <ImageView
+        android:id="@+id/redinvisibleBalance"
+        android:layout_width="400dip"
+        android:layout_height="1dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/blankbalance" />
+
+    <ImageButton
+        android:id="@+id/redcrateIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/redinvisibleBalance"
+        android:layout_toRightOf="@+id/redstruct"
+        android:background="@null"
+        android:src="@drawable/bigcrate" />
+
+    <ImageButton
+        android:id="@+id/redcrateOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/redbalance"
+        android:layout_alignTop="@+id/redcrateIR"
+        android:background="@null"
+        android:src="@drawable/bigcrate" />
+
+    <ImageButton
+        android:id="@+id/redcrateOL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/redinvisibleBalance"
+        android:layout_alignLeft="@+id/redbalance"
+        android:background="@null"
+        android:onClick="addToCrateOL"
+        android:src="@drawable/bigcrate" />
+
+    <TextView
+        android:id="@+id/redcrateORnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/redbalance"
+        android:layout_below="@+id/redbalance"
+        android:layout_marginRight="29dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/redclear"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:text="CLEAR"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/redcrateILnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/redcrateIRnum"
+        android:layout_alignBottom="@+id/redcrateIRnum"
+        android:layout_alignRight="@+id/redcrateIL"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/redcrateOLnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/redcrateILnum"
+        android:layout_alignBottom="@+id/redcrateILnum"
+        android:layout_alignRight="@+id/redcrateOL"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/redTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/redclear"
+        android:layout_alignRight="@+id/redstruct"
+        android:layout_marginRight="40dip"
+        android:text="Red Score"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/redcrateIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/redinvisibleBalance"
+        android:layout_toLeftOf="@+id/redstruct"
+        android:background="@null"
+        android:src="@drawable/bigcrate" />
+
+    <TextView
+        android:id="@+id/redscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/redTextLabel"
+        android:layout_alignBottom="@+id/redTextLabel"
+        android:layout_alignRight="@+id/redstruct"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/redcrateIRnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/redcrateORnum"
+        android:layout_alignBottom="@+id/redcrateORnum"
+        android:layout_alignRight="@+id/redcrateIR"
+        android:layout_marginRight="29dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/redFloor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redstruct"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/redfloor" />
+
+    <TextView
+        android:id="@+id/redFloornum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/redFloor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="0" />
+
+</RelativeLayout>
